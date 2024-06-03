@@ -8,6 +8,8 @@ COPY src ./src
 
 COPY mvnw .
 
+COPY .mvn .
+
 CMD ["cmod" , "777", "mvnw"]
 
 RUN . /mvnw package 
